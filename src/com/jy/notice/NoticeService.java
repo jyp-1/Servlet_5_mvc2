@@ -27,13 +27,13 @@ public class NoticeService {
 			try {
 				Connection con = DBConnetor.getConnection();
 				
-				int result = noticeDAO.noticeWrite(con, dto);
-				con.close();
-				if(result>0) {
-					 	
-				}else {
-					
-				}
+				
+				  int result = noticeDAO.noticeWrite(con, dto); con.close(); if(result>0) {
+				  
+				  }else {
+				  
+				  }
+				 
 				
 			}catch (Exception e) {
 				// TODO: handle exception
